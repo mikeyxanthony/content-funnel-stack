@@ -6,8 +6,19 @@ export default function AsciiBackground() {
   return (
     <div
       aria-hidden="true"
-      className="fixed inset-0 overflow-hidden pointer-events-none select-none"
-      style={{ zIndex: 0 }}
+      className="pointer-events-none select-none"
+      style={{
+        // Explicit inline positioning — avoids any Tailwind purge or
+        // class-ordering issue. 100vw/100vh ensures full viewport on
+        // mobile Safari where inset-0 can misbehave.
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        zIndex: 0,
+        overflow: "hidden",
+      }}
     >
       <pre
         style={{
@@ -15,7 +26,7 @@ export default function AsciiBackground() {
           fontSize: "10px",
           lineHeight: "1.8",
           letterSpacing: "0.04em",
-          color: "rgba(255,255,255,0.08)",
+          color: "rgba(255,255,255,0.20)",
           whiteSpace: "pre-wrap",
           wordBreak: "break-all",
           width: "100%",
