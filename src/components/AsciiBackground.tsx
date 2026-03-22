@@ -15,7 +15,7 @@ export default function AsciiBackground() {
           fontSize: "10px",
           lineHeight: "1.8",
           letterSpacing: "0.04em",
-          color: "rgba(255,255,255,0.028)",
+          color: "rgba(255,255,255,0.08)",
           whiteSpace: "pre-wrap",
           wordBreak: "break-all",
           width: "100%",

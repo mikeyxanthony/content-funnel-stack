@@ -18,7 +18,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0A0A0A]">
+    // No bg-[#0A0A0A] here — body CSS provides the dark base, keeping main
+    // transparent so the fixed AsciiBackground layer shows through.
+    <main className="min-h-screen">
       <AnnouncementBar />
       <Navbar />
       <Hero />
