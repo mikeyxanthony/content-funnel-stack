@@ -1,3 +1,5 @@
+const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
+
 const testimonials = [
   {name:"Alex R.",role:"Business Coach, $18k/mo",avatar:"A",text:"My show rate went from 55% to 87% in the first 30 days. The no-show elimination system alone paid for everything 10x over.",stars:5},
   {name:"Maria C.",role:"Agency Owner, $22k/mo",avatar:"M",text:"I had traffic but no system to convert it. Booked 14 calls in the first week after implementing the YouTube funnel integration.",stars:5},
@@ -12,7 +14,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">Social Proof</span>
-          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">Real Results From <span className="text-[#FF2020] neon-glow">Real People</span></h2>
+          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">Real Results From{" "}<span className="text-[#FF2020] neon-glow serif-highlight" style={SF}>Real People</span></h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.map((t) => (

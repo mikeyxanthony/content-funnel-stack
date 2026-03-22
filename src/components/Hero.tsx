@@ -1,3 +1,5 @@
+const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center pt-8 pb-16 px-4 overflow-hidden">
@@ -5,13 +7,14 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
-            {/* Pill — single line */}
             <div className="inline-flex items-center gap-2 bg-[#FF2020]/10 border border-[#FF2020]/30 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 bg-[#FF2020] rounded-full animate-pulse flex-shrink-0" />
-              <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest whitespace-nowrap">Coaches &amp; Agency Owners · $15–20k/mo</span>
+              <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest whitespace-nowrap">Coaches &amp; Agency Owners &middot; $15&ndash;20k/mo</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-4 tracking-tight">
-              Increase Your <span className="text-[#FF2020] neon-glow">Show &amp; Close Rates</span> With the Content Funnel System
+              Increase Your{" "}
+              <span className="text-[#FF2020] neon-glow serif-highlight" style={SF}>Show &amp; Close Rates</span>{" "}
+              With the Content Funnel System
             </h1>
             <p className="text-white/70 text-lg sm:text-xl leading-relaxed mb-8 max-w-xl">
               You have the YouTube experience and an offer that works. We will fix your leaking funnel <strong className="text-white">WITHOUT</strong> rebuilding everything from scratch.

@@ -1,3 +1,5 @@
+const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
+
 const items = [
   {name:"Content Funnel Blueprint",value:"$2,000",desc:"Full roadmap of your optimized content-to-call funnel.",icon:"🗺️"},
   {name:"VSL Optimization Suite",value:"$1,500",desc:"Script review, hook rewrite, and CRO for your sales video.",icon:"🎬"},
@@ -14,7 +16,7 @@ export default function Offer() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">What is Included</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl mt-3 mb-4">Everything You Need to <span className="text-[#FF2020] neon-glow">Stack Your Funnel</span></h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl mt-3 mb-4">Everything You Need to{" "}<span className="text-[#FF2020] neon-glow serif-highlight" style={SF}>Stack Your Funnel</span></h2>
           <p className="text-white/60 max-w-xl mx-auto">Every piece is designed to work together. No random tactics.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -30,7 +32,7 @@ export default function Offer() {
           <p className="text-white/50 text-sm mb-2">Total Value</p>
           <p className="text-5xl text-white line-through opacity-40">$10,000+</p>
           <p className="text-white/50 text-sm mt-4 mb-2">Your Investment Today</p>
-          <p className="text-5xl text-[#FF2020] neon-glow">Book a Free Call</p>
+          <p className="text-5xl neon-glow serif-highlight" style={{...SF, color:'#FF2020'}}>Book a Free Call</p>
           <p className="text-white/40 text-sm mt-3">Get a custom quote on your 30-min strategy session</p>
           <a href="#cta" className="neon-btn mt-6 px-8 py-4 rounded-xl text-base font-black pulse-glow">Claim Your Free Strategy Session</a>
           <p className="text-white/30 text-xs mt-3">100% Money-Back Guarantee</p>
