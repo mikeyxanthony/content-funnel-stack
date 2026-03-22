@@ -11,16 +11,16 @@ export default function Testimonials() {
     <section id="testimonials" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-[#39FF14] text-xs font-semibold uppercase tracking-widest">Social Proof</span>
-          <h2 className="text-3xl sm:text-4xl font-black mt-3 mb-4">Real Results From <span className="text-[#39FF14] neon-glow">Real People</span></h2>
+          <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">Social Proof</span>
+          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">Real Results From <span className="text-[#FF2020] neon-glow">Real People</span></h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {testimonials.map((t) => (
             <div key={t.name} className="neon-border rounded-xl bg-[#111111] p-6 flex flex-col gap-4">
-              <div className="flex gap-0.5 text-[#39FF14] text-sm">{"★".repeat(t.stars)}</div>
+              <div className="flex gap-0.5 text-[#FF2020] text-sm">{"★".repeat(t.stars)}</div>
               <p className="text-white/80 text-sm leading-relaxed flex-1">&ldquo;{t.text}&rdquo;</p>
-              <div className="flex items-center gap-3 pt-2 border-t border-[#39FF14]/10">
-                <div className="w-9 h-9 rounded-full bg-[#39FF14]/20 border border-[#39FF14]/40 flex items-center justify-center text-[#39FF14] font-bold text-sm">{t.avatar}</div>
+              <div className="flex items-center gap-3 pt-2 border-t border-[#FF2020]/10">
+                <div className="w-9 h-9 rounded-full bg-[#FF2020]/20 border border-[#FF2020]/40 flex items-center justify-center text-[#FF2020] font-bold text-sm">{t.avatar}</div>
                 <div><p className="text-white text-sm font-bold">{t.name}</p><p className="text-white/40 text-xs">{t.role}</p></div>
               </div>
             </div>

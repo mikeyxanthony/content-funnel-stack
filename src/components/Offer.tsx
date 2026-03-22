@@ -13,24 +13,24 @@ export default function Offer() {
     <section id="offer" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-[#39FF14] text-xs font-semibold uppercase tracking-widest">What is Included</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">Everything You Need to <span className="text-[#39FF14] neon-glow">Stack Your Funnel</span></h2>
+          <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">What is Included</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl mt-3 mb-4">Everything You Need to <span className="text-[#FF2020] neon-glow">Stack Your Funnel</span></h2>
           <p className="text-white/60 max-w-xl mx-auto">Every piece is designed to work together. No random tactics.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
           {items.map((item) => (
             <div key={item.name} className="neon-border rounded-xl bg-[#111111] p-5 flex flex-col gap-3 hover:bg-[#1A1A1A] transition-colors">
               <div className="text-3xl">{item.icon}</div>
-              <div><p className="text-white font-bold text-sm">{item.name}</p><p className="text-[#39FF14] text-xs font-semibold mt-0.5">Value: {item.value}</p></div>
+              <div><p className="text-white font-bold text-sm">{item.name}</p><p className="text-[#FF2020] text-xs font-semibold mt-0.5">Value: {item.value}</p></div>
               <p className="text-white/50 text-xs leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
         <div className="neon-border rounded-2xl bg-[#111111] p-8 text-center">
           <p className="text-white/50 text-sm mb-2">Total Value</p>
-          <p className="text-5xl font-black text-white line-through opacity-40">$10,000+</p>
+          <p className="text-5xl text-white line-through opacity-40">$10,000+</p>
           <p className="text-white/50 text-sm mt-4 mb-2">Your Investment Today</p>
-          <p className="text-5xl font-black text-[#39FF14] neon-glow">Book a Free Call</p>
+          <p className="text-5xl text-[#FF2020] neon-glow">Book a Free Call</p>
           <p className="text-white/40 text-sm mt-3">Get a custom quote on your 30-min strategy session</p>
           <a href="#cta" className="neon-btn mt-6 px-8 py-4 rounded-xl text-base font-black pulse-glow">Claim Your Free Strategy Session</a>
           <p className="text-white/30 text-xs mt-3">100% Money-Back Guarantee</p>
