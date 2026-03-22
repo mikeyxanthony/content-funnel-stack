@@ -5,13 +5,13 @@ export default function Results() {
     <section id="results" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-[#39FF14] text-xs font-semibold uppercase tracking-widest">Tangible Results</span>
-          <h2 className="text-3xl sm:text-4xl font-black mt-3 mb-4">What You Will Have <span className="text-[#39FF14] neon-glow">After 30 Days</span></h2>
+          <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">Tangible Results</span>
+          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">What You Will Have <span className="text-[#FF2020] neon-glow">After 30 Days</span></h2>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
           {results.map((r) => (
             <div key={r.metric} className="neon-border rounded-xl bg-[#111111] p-6 text-center">
-              <p className="text-4xl font-black text-[#39FF14] neon-glow">{r.metric}</p>
+              <p className="text-4xl text-[#FF2020] neon-glow">{r.metric}</p>
               <p className="text-white font-bold text-sm mt-1">{r.label}</p>
               <p className="text-white/40 text-xs mt-1">{r.sub}</p>
             </div>
@@ -19,7 +19,7 @@ export default function Results() {
         </div>
         <div className="neon-border rounded-2xl bg-[#111111] p-8">
           <h3 className="text-white font-bold text-lg mb-6">Key Skills and Systems You Will Have Implemented:</h3>
-          <div className="grid sm:grid-cols-2 gap-3">{skills.map((s,i) => (<div key={i} className="flex items-center gap-3 text-white/70 text-sm"><span className="text-[#39FF14] flex-shrink-0">◆</span>{s}</div>))}</div>
+          <div className="grid sm:grid-cols-2 gap-3">{skills.map((s,i) => (<div key={i} className="flex items-center gap-3 text-white/70 text-sm"><span className="text-[#FF2020] flex-shrink-0">◆</span>{s}</div>))}</div>
         </div>
       </div>
     </section>
