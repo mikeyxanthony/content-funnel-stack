@@ -16,11 +16,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
   return (
-    <nav className={`sticky top-0 z-40 w-full transition-all duration-300 ${scrolled ? "bg-[#0A0A0A]/90 backdrop-blur-md border-b border-[#39FF14]/10" : "bg-transparent"}`}>
+    <nav className={`sticky top-0 z-40 w-full transition-all duration-300 ${scrolled ? "bg-[#0A0A0A]/90 backdrop-blur-md border-b border-[#FF2020]/10" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-2">
-            <span className="text-[#39FF14] font-black text-xl tracking-tighter">CFS</span>
+            <span className="text-[#FF2020] font-black text-xl tracking-tighter">CFS</span>
             <span className="text-white/60 text-sm font-medium hidden sm:block">Content Funnel Stack</span>
           </a>
           <div className="hidden md:flex items-center gap-6">
@@ -41,7 +41,7 @@ export default function Navbar() {
         </div>
       </div>
       {mobileOpen && (
-        <div className="md:hidden bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#39FF14]/10 px-4 py-4 space-y-3">
+        <div className="md:hidden bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#FF2020]/10 px-4 py-4 space-y-3">
           {navLinks.map((l) => (
             <a key={l.label} href={l.href} onClick={() => setMobileOpen(false)} className="block text-white/70 hover:text-white text-base font-medium py-1">{l.label}</a>
           ))}
