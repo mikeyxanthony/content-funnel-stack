@@ -9,12 +9,13 @@ const config: Config = {
     extend: {
       colors: {
         background: "#0A0A0A",
-        "neon-green": "#39FF14",
+        accent: "#FF2020",
         surface: "#111111",
         "surface-2": "#1A1A1A",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Instrument Serif", "Georgia", "serif"],
       },
     },
   },
