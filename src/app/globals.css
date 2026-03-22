@@ -19,8 +19,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 
-/* Italic / highlighted text — Instrument Serif */
-em, i, .serif {
+/* Instrument Serif — applied via explicit class only (no em/i auto-targeting) */
+.serif-highlight {
   font-family: 'Instrument Serif', Georgia, serif;
   font-style: italic;
 }
@@ -29,15 +29,19 @@ em, i, .serif {
 ::-webkit-scrollbar-track { background: #0A0A0A; }
 ::-webkit-scrollbar-thumb { background: #FF2020; border-radius: 3px; }
 
-.neon-glow { text-shadow: 0 0 10px rgba(255,32,32,0.8), 0 0 20px rgba(255,32,32,0.5), 0 0 40px rgba(255,32,32,0.3); }
-.neon-border { border: 1px solid rgba(255,32,32,0.2); box-shadow: 0 0 15px rgba(255,32,32,0.05); }
-.neon-btn { background: #FF2020; color: #ffffff; font-weight: 700; transition: all 0.2s; box-shadow: 0 0 20px rgba(255,32,32,0.4); display: inline-block; }
-.neon-btn:hover { background: #ff3d3d; box-shadow: 0 0 30px rgba(255,32,32,0.6); transform: translateY(-1px); }
+/* Toned-down glow — soft, not burning */
+.neon-glow { text-shadow: 0 0 8px rgba(255,32,32,0.28), 0 0 18px rgba(255,32,32,0.10); }
+.neon-border { border: 1px solid rgba(255,32,32,0.2); box-shadow: 0 0 12px rgba(255,32,32,0.04); }
+.neon-btn { background: #FF2020; color: #ffffff; font-weight: 700; transition: all 0.2s; box-shadow: 0 0 14px rgba(255,32,32,0.28); display: inline-block; }
+.neon-btn:hover { background: #ff3d3d; box-shadow: 0 0 22px rgba(255,32,32,0.45); transform: translateY(-1px); }
 
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
 
-@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(255,32,32,0.4); } 50% { box-shadow: 0 0 40px rgba(255,32,32,0.7), 0 0 80px rgba(255,32,32,0.3); } }
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 14px rgba(255,32,32,0.28); }
+  50%        { box-shadow: 0 0 22px rgba(255,32,32,0.45), 0 0 40px rgba(255,32,32,0.15); }
+}
 .pulse-glow { animation: pulse-glow 2.5s ease-in-out infinite; }
 
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }

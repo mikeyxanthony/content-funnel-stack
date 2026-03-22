@@ -10,7 +10,9 @@ export default function Story() {
           <p>Dear business builder,</p>
           <p>We get it. Growing a business is hard. <strong className="text-white">Really f*cking hard.</strong></p>
           <p>You are probably worried about where your next <span className="bg-[#FF2020]/10 text-[#FF2020] px-1 rounded">strategy call</span> will come from. Stressed. Sleeping like a teething two-year-old.</p>
-          <p className="text-white/50 italic">Should I post more on YouTube? Update my VSL? Fix my no-show problem? What is actually moving the needle?</p>
+          <p className="text-white/50">
+            <span className="serif-highlight">Should I post more on YouTube? Update my VSL? Fix my no-show problem? What is actually moving the needle?</span>
+          </p>
           <p>Most coaches and agency owners at your level have <strong className="text-white">an audience, an offer, and a track record</strong>. What they do not have is a <span className="text-[#FF2020] font-bold">system</span> that turns their content into booked calls.</p>
           <p>That is why we built <strong className="text-[#FF2020]">The Content Funnel Stack</strong>. The end-to-end system that turns your YouTube presence into a <span className="bg-[#FF2020]/10 text-[#FF2020] px-1 rounded">high-converting call funnel</span>.</p>
           <p>Higher show rates. Higher close rates. <strong className="text-white">More revenue from the audience you already have.</strong></p>
