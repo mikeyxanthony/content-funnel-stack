@@ -14,17 +14,17 @@ export default function FAQ() {
     <section id="faq" className="py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-[#39FF14] text-xs font-semibold uppercase tracking-widest">FAQ</span>
-          <h2 className="text-3xl sm:text-4xl font-black mt-3">Questions? We Have <span className="text-[#39FF14] neon-glow">Answers</span></h2>
+          <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">FAQ</span>
+          <h2 className="text-3xl sm:text-4xl mt-3">Questions? We Have <span className="text-[#FF2020] neon-glow">Answers</span></h2>
         </div>
         <div className="space-y-3">
           {faqs.map((faq,i) => (
-            <div key={i} className={`neon-border rounded-xl bg-[#111111] overflow-hidden transition-all ${open===i?"border-[#39FF14]/40":""}`}>
+            <div key={i} className={`neon-border rounded-xl bg-[#111111] overflow-hidden transition-all ${open===i?"border-[#FF2020]/40":""}`}>
               <button className="w-full text-left px-6 py-5 flex items-center justify-between gap-4" onClick={() => setOpen(open===i?null:i)}>
                 <span className="text-white font-semibold text-sm pr-4">{faq.q}</span>
-                <span className={`text-[#39FF14] text-lg flex-shrink-0 transition-transform ${open===i?"rotate-45":""}`}>+</span>
+                <span className={`text-[#FF2020] text-lg flex-shrink-0 transition-transform ${open===i?"rotate-45":""}`}>+</span>
               </button>
-              {open===i && <div className="px-6 pb-5 text-white/60 text-sm leading-relaxed border-t border-[#39FF14]/10 pt-4">{faq.a}</div>}
+              {open===i && <div className="px-6 pb-5 text-white/60 text-sm leading-relaxed border-t border-[#FF2020]/10 pt-4">{faq.a}</div>}
             </div>
           ))}
         </div>

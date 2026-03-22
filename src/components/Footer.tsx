@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-[#39FF14]/10 py-10 px-4">
+    <footer className="border-t border-[#FF2020]/10 py-10 px-4">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <span className="text-[#39FF14] font-black text-lg tracking-tighter">CFS</span>
+          <span className="text-[#FF2020] font-black text-lg tracking-tighter">CFS</span>
           <span className="text-white/30 text-sm">Content Funnel Stack by Verdex Studio</span>
         </div>
         <div className="flex gap-6 text-white/30 text-sm">
