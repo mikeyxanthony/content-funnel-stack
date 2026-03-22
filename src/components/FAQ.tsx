@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+
+const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
+
 const faqs = [
   {q:"What if I don't have a big YouTube audience?",a:"The system works with any size audience. We have seen coaches with under 1,000 subscribers book 10+ calls/week with the right funnel architecture."},
   {q:"How quickly will I see results?",a:"Most clients see measurable improvement in show rates within the first 2 weeks. Close rate improvements typically show up by week 4."},
@@ -15,7 +18,7 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">FAQ</span>
-          <h2 className="text-3xl sm:text-4xl mt-3">Questions? We Have <span className="text-[#FF2020] neon-glow">Answers</span></h2>
+          <h2 className="text-3xl sm:text-4xl mt-3">Questions? We Have{" "}<span className="text-[#FF2020] neon-glow serif-highlight" style={SF}>Answers</span></h2>
         </div>
         <div className="space-y-3">
           {faqs.map((faq,i) => (
