@@ -1,3 +1,5 @@
+const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
+
 const credentials = ["Built and scaled content funnels for 7-figure coaches","Helped 200+ coaches and agency owners optimize their call pipelines","$4.2M+ revenue generated across client base","Specialist in YouTube-to-funnel architecture and VSL optimization","Creator of the Content Funnel Stack framework"];
 export default function AboutFounder() {
   return (
@@ -5,7 +7,7 @@ export default function AboutFounder() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">Who You Are Learning From</span>
-          <h2 className="text-3xl sm:text-4xl mt-3">Built by People Who Have <span className="text-[#FF2020] neon-glow">Done It</span></h2>
+          <h2 className="text-3xl sm:text-4xl mt-3">Built by People Who Have{" "}<span className="text-[#FF2020] neon-glow serif-highlight" style={SF}>Done It</span></h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="neon-border rounded-2xl bg-[#111111] aspect-square max-w-sm mx-auto w-full flex items-center justify-center relative overflow-hidden">

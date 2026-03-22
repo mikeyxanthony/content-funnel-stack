@@ -1,3 +1,5 @@
+const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
+
 const cases = [
   {name:"Alex R. - Business Coach",result:"+58% show rate in 30 days",before:"Booking 8-10 calls/week but only 4-5 showed up. Close rate stuck at 30%.",after:"After no-show elimination system and pre-call nurture: 87% show rate, 52% close rate. Added $11k MRR within 6 weeks.",initials:"AR"},
   {name:"Maria C. - Digital Agency",result:"14 booked calls in week 1",before:"Great YouTube channel but zero funnel infrastructure. Traffic with no conversion.",after:"Implemented YouTube-to-funnel integration with optimized VSL. 14 calls booked in first 7 days, 6 closed.",initials:"MC"},
@@ -9,7 +11,7 @@ export default function CaseStudies() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">Track Record</span>
-          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">Case Studies and <span className="text-[#FF2020] neon-glow">Proof</span></h2>
+          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">Case Studies and{" "}<span className="text-[#FF2020] neon-glow serif-highlight" style={SF}>Proof</span></h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {cases.map((c) => (

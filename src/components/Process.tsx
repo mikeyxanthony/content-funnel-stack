@@ -1,3 +1,5 @@
+const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
+
 const steps = [
   {step:"01",title:"Funnel Audit and Blueprint",desc:"We map your entire content ecosystem and identify exactly where leads are dropping off. You leave with a prioritized fix list.",duration:"Week 1"},
   {step:"02",title:"Funnel Build and Optimization",desc:"We implement the Content Funnel Stack: optimized CTAs, VSL hooks, landing page copy, and your no-show elimination sequences. Everything goes live.",duration:"Weeks 2-3"},
@@ -10,7 +12,7 @@ export default function Process() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-[#FF2020] text-xs font-semibold uppercase tracking-widest">How It Works</span>
-          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">From Day 1 to <span className="text-[#FF2020] neon-glow">Fully Operational</span></h2>
+          <h2 className="text-3xl sm:text-4xl mt-3 mb-4">From Day 1 to{" "}<span className="text-[#FF2020] neon-glow serif-highlight" style={SF}>Fully Operational</span></h2>
           <p className="text-white/50">A clear 4-step process with no guesswork.</p>
         </div>
         <div className="relative">
