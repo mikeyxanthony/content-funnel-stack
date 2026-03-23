@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LayoutRails from "@/components/LayoutRails";
 
 export const metadata: Metadata = {
   title: "The Content Funnel Stack | Increase Your Show & Close Rates",
@@ -19,12 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased bg-[#0A0A0A] text-white">
-        {/* Architectural layout guide rails — sits at z-index 0 behind all content */}
-        <LayoutRails />
-        {/* Page content — z-index 1 keeps it above the rail layer */}
-        <div className="relative" style={{ zIndex: 1 }}>
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
