@@ -1,5 +1,13 @@
 const SF = { fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" } as const;
 
+// Real headshots for social proof widget
+const HEADSHOTS = [
+  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face",
+  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&h=64&fit=crop&crop=face",
+  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face",
+  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop&crop=face",
+];
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center pt-8 pb-16 px-4 overflow-hidden">
@@ -30,22 +38,39 @@ export default function Hero() {
             <a href="#cta" className="neon-btn px-8 py-4 rounded-xl text-base font-black tracking-wide pulse-glow">Claim Your Free Strategy Session →</a>
             <p className="mt-3 text-white/40 text-xs">100% free. No commitment. 30-minute call.</p>
           </div>
+
           <div className="relative animate-fade-in-up">
-            <div className="neon-border rounded-2xl overflow-hidden bg-[#1A1A1A]">
-              <div className="aspect-video bg-[#111111] flex flex-col items-center justify-center relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FF2020]/5 to-transparent" />
-                <div className="relative z-10 text-center px-6">
-                  <div className="w-16 h-16 bg-[#FF2020]/20 border-2 border-[#FF2020] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-7 h-7 text-[#FF2020] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                  </div>
-                  <p className="text-white/50 text-sm">Watch: How The Content Funnel Stack works</p>
-                  <p className="text-[#FF2020]/70 text-xs mt-1">[ VSL placeholder — add your link ]</p>
-                </div>
+            {/* YouTube VSL embed */}
+            <div className="neon-border rounded-2xl overflow-hidden bg-[#111111]">
+              <div className="aspect-video relative">
+                <iframe
+                  src="https://www.youtube.com/embed/0jk1zGhHb-g?rel=0&modestbranding=1"
+                  title="The Content Funnel Stack — How It Works"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: "none" }}
+                />
               </div>
             </div>
+
+            {/* Social proof strip with real headshots */}
             <div className="mt-4 neon-border rounded-xl bg-[#111111] p-4 flex items-center gap-4">
-              <div className="flex -space-x-2">{["A","B","C","D"].map((l,i) => (<div key={i} className="w-8 h-8 rounded-full bg-[#FF2020]/20 border-2 border-[#0A0A0A] flex items-center justify-center text-[#FF2020] text-xs font-bold">{l}</div>))}</div>
-              <div><div className="flex gap-0.5 text-[#FF2020] text-sm">★★★★★</div><p className="text-white/60 text-xs mt-0.5">Trusted by <strong className="text-white">200+ coaches</strong> and agency owners</p></div>
+              <div className="flex -space-x-2">
+                {HEADSHOTS.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt=""
+                    className="w-8 h-8 rounded-full border-2 border-[#0A0A0A] object-cover"
+                    loading="lazy"
+                  />
+                ))}
+              </div>
+              <div>
+                <div className="flex gap-0.5 text-[#FF2020] text-sm">★★★★★</div>
+                <p className="text-white/60 text-xs mt-0.5">Trusted by <strong className="text-white">200+ coaches</strong> and agency owners</p>
+              </div>
             </div>
           </div>
         </div>
